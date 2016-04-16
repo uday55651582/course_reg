@@ -1,0 +1,29 @@
+
+
+<form action="profile">
+<div>
+ <p><h1> SignUp New Users </h1></p>
+<p >
+ <label for="title" style="display: inline-block; width:170px;" required>Useraaaaaaaaaaaaaaaaaaaaaaaaaa:</label> <%=text_field :users, :user%>
+ </p>
+<p>
+ <label for="instructor" style="display: inline-block; width:170px;">Email:</label> <%=text_field :users, :email%>
+ </p>
+ <p>
+ <label for="instructor" style="display: inline-block; width:170px;">Location:</label> <%=text_field :users, :location%>
+ </p>
+ <p>
+ <label for="instructor" style="display: inline-block; width:170px;">Password:</label> <%=text_field :users, :password%>
+ </p>
+ <p> <label for="instructor" style="display: inline-block; width:170px;">Buyer/Seller:</label>
+ <select>
+  <option value="Buyer">Buyer</option>
+  <option value="Seller">Seller</option>
+</select>
+ </p>
+ <p>
+ <label for="instructor" style="display: inline-block; width:170px;">Confirm Password:</label> <%=text_field%>
+ </p>
+ <input type="submit" onClick="parent.location='profile.html'" value='SignUp' id="submit">
+ </div>
+ </form>

@@ -1,0 +1,17 @@
+
+
+<form action="coursedetails">
+<div>
+ <p><h1> Trading Commodities </h1></p>
+<p >
+ <label for="title" style="display: inline-block; width:100px;" required>Username:</label> <%=text_field :user, :Title%>
+ </p>
+<p>
+ <label for="instructor" style="display: inline-block; width:100px;">Password:</label> <%=text_field :user, :Instructor%>
+ </p>
+ <input type="submit" onClick="parent.location='coursedetails.html' v" value='Login' id="submit">
+ <p>
+   Don't have an account!
+   <a href="/signup">Sign Up Here</a></p>
+ </div>
+ </form>

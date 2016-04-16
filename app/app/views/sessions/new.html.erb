@@ -1,0 +1,15 @@
+
+<% @page_title = "UserAuth | Login" -%>
+<div class= "Sign_Form">
+ <h1>Trading Commodities</h1>
+  <%= form_tag(:action => 'create') do %>
+    <p>Username or Email:</br> <%= text_field_tag(:username_or_email) %></p> 
+    <p>Password:</br> <%= password_field_tag :password %></p> 
+    <%= submit_tag("Log In") %>
+  <% end %>
+<p>Don't have an account! 
+    <%= link_to 'SignUp', new_user_path %> 
+</p>
+</div>
+
+

@@ -1,0 +1,59 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.Buyer{
+     background: #00FFFF;
+     font-weight: bold;
+     margin: auto;
+     width: 60%;
+     padding: 10px;
+    p {
+        font-size: 15px;
+    }
+}
+
+.Seller{
+      background-color: hsla(120, 100%, 75%, 0.3);
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+      font-weight: bold;
+    p {
+        font-size: 15px;
+    }
+}
+
+.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	position:fixed;
+    margin-left:-100px; /* half of width */
+    margin-top:-100px;  /* half of height */
+    top:30%;
+    left:30%;
+}
+.CSSTableGenerator td {
+    border: 1px solid black;
+    font-family: Tahoma;
+	font-size: 14px;
+    overflow: hidden;
+    width: 100px;
+}
+.CSSTableGenerator tr {
+    border: 1px solid black;
+    font-family: Tahoma;
+	font-size: 14px;
+    overflow: hidden;
+     height: 10vh;
+    width: 200px;
+}
+.CSSTableGenerator caption {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 160%;
+    padding: 5px;
+    font-weight: bold;
+}
+.CSSTableGenerator tr:nth-child(odd){ background-color:#aad4ff; }
+.CSSTableGenerator tr:nth-child(even){ background-color:#ffffff; }
+

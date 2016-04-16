@@ -1,0 +1,56 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div style="color:#0000FF"> 
+  <div class="form-group" >
+    <div class="col-md-12 control">
+    <%= f.label :username %>
+    </div>
+    <%= f.text_field :username, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <div class="col-md-12 control">
+    <%= f.label :email %>
+    </div>
+    <%= f.text_field :email, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <div class="col-md-12 control">
+    <%= f.label :password %>
+    </div>
+    <%= f.password_field :password, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <div class="col-md-12 control">
+     <%= f.label :latitude %>
+    </div>
+    <%= f.text_field :latitude, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <div class="col-md-12 control">
+    <%= f.label :longitude %>
+    </div>
+    <%= f.text_field :longitude, class: "form-control"  %>
+  </div>
+  <div class="form-group">
+    <div class="col-md-12 control">
+    <%= f.label :type %>
+    </div>
+    <%= f.select :type, [['Buyer', 'Buyer'],['Seller','Seller']], class: "form-control"  %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sign Up", class: "btn btn-primary"  %>
+   
+  </div>
+<% end %>
+
+

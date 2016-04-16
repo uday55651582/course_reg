@@ -1,0 +1,11 @@
+User.new
+User.new(Title: "555", Instructor: "Tzeng", Semester: "Spring")
+User.Title
+user
+user=User.new(Title: "555", Instructor: "Tzeng", Semester: "Spring")
+USer.all
+user.Title
+User.all
+project.all
+xit
+exit

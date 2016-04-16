@@ -1,0 +1,38 @@
+
+<p id="notice"><%= notice %></p>
+<div style="margin: 0 auto; width: 656px;">
+<div class="CSSTableGenerator" >
+     <div class="logout" style="float:right">
+       <%= link_to "Log out", logout_path, method: :delete %>
+    </div>
+  <%= will_paginate @users %>
+<table style="width:500px"  BORDER = 1 CELLPADDING = 10>
+  <caption style="text-align:right;" >All Users</caption>
+  <thead>
+      <tr>
+          <th style="text-align:center;">Username</th>
+          <th style="text-align:center;">Email</th>
+          <th style="text-align:center;">Type</th>
+          <th style="text-align:center;">Commodity</th>
+      </tr>
+  </thead>
+  <tbody>
+      <% @users.each do |user| %>
+         <% if user.username !='admin1' %>
+          <tr>
+            <td style="text-align:center;" ROWSPAN = 1 ><%= user.username %></td>
+            <td style="text-align:center;" ROWSPAN = 1 ><%= user.email %></td>
+            <td style="text-align:center;" ROWSPAN = 1 ><%= user.type %></td>
+            <td style="text-align:center;" ROWSPAN = 1 ><% if user.commodity.nil? %>
+             <%= '0'%>
+             <% else %>
+             <%= user.commodity %>
+             <% end %>
+            </td>
+          </tr>
+         <%end %>
+      <% end %>
+  </tbody>
+</table>
+</div>
+</div>
