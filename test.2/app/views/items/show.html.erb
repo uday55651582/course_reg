@@ -1,0 +1,11 @@
+<% if @item!=nil %>
+<p>
+  <strong>Product Name:</strong>
+  <%= @item.productname %>
+</p>
+<% else %>
+  <h1>No products to display</h1>
+<% end %>
+
+<h1>Want to add some products?<%= link_to " Click Here" , new_item_path %>    </h1>
+

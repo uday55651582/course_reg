@@ -80,3 +80,33 @@ cd udayapp/
 bundle install
 rake db:migrate
 rake db:migrate:status
+cd
+cd new_app2
+rails server -b $IP -p $PORT
+bundle install
+rails server -b $IP -p $PORT
+rails -v
+rails server -b $IP -p $PORT
+cd
+cd Trading_Commodity/
+rails server -b $IP -p $PORT
+rake db:migrate
+bundle install
+rails server -b $IP -p $PORT
+bundle install
+rails server -b $IP -p $PORT
+bundle install
+rails server -b $IP -p $PORT
+cd
+cd test/
+bundle install
+remove column :users, :category, :string
+remove column :users, :category
+remove_column :users, :category, :string
+sqlite3 db/development.sqlite3
+cd
+cd Trading_Commodity/
+sqlite3 db/development.sqlite3
+cd
+cd Trading_Commodity/
+rake routes

@@ -1,0 +1,13 @@
+<h1>Purchase products here</h1>
+
+<%= will_paginate %>
+
+<ul class="items">
+  <% @items.each do |item| %>
+    <h2>
+      <%= link_to item.productname, "#" %>
+    </h2>
+  <% end %>
+</ul>
+
+<%= will_paginate %>
