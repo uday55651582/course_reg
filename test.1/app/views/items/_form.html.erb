@@ -1,0 +1,48 @@
+<%= form_for @item, html: {multipart: true, class: "form-horizontal"} do |f| %>
+  <div class="form-group">
+    <%= f.label :productname, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :productname %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :baseprice, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :baseprice %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :category, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :category %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cdays, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :cdays %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :chours, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :chours %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cminutes, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :cminutes %>
+    </div>
+  </div>
+  <!--div class="form-group">
+    <#%= f.label :email, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <#%= f.text_field :email %>
+    </div>
+  </div-->
+  <div class="form-group col-sm-2 control-label">
+    <%= f.submit %>
+  </div>
+
+<% end %>
