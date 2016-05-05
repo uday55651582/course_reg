@@ -5,7 +5,21 @@
 <ul class="items">
   <% @items.each do |item| %>
     <h2>
-      <%= link_to item.productname, "#" %>
+      <%= link_to item.productname, item %>
+       <%= item.cbiddingprice %>
+      <%= item.email %>
+      
+<script type="text/javascript">
+        $(function() {
+
+            Timers.init();
+
+        });
+    </script>
+<p>
+  <div data-countdown-until="<%= 10.days.from_now %>"></div>
+</p>
+
     </h2>
   <% end %>
 </ul>

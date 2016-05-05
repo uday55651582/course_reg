@@ -2,14 +2,11 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:edit, :update, :destroy]
   before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user,     only: [:index]
+
   
   def show
     @user = User.find(params[:id])
-   #if item_check?
-    #@item = Item.find(params[:id])
-   #else
-    # @item.productname = "No Products"
-   #end
+
       @user.displaycolor = "yellow"
    
   end

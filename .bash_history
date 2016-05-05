@@ -110,3 +110,16 @@ sqlite3 db/development.sqlite3
 cd
 cd Trading_Commodity/
 rake routes
+cd
+cd test.1/
+sqlite3 db/development.sqlite3
+cd
+cd test.1/
+remove_column :items, :cdays
+ruby generate migration remove_column :items, :cdays, :integer
+rails generate migration remove_column :items, :cdays, :integer
+rails generate migration remove_column :items, :cminutes, :integer
+rails d migration remove_column :items, :cminutes, :integer
+rails generate migration remove_cminutes_from_items cminutes:integer
+rails generate migration remove_cdays_from_items cdays:integer
+rake db:migrate

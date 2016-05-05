@@ -1,11 +1,34 @@
-<% if @item!=nil %>
-<p>
-  <strong>Product Name:</strong>
+
+<body>
+<br>
+<h1>Details of <%= @item.productname %> you choose to bid</h1>
+<center>
+    <div >
+       <p>
+  <strong>Product name:</strong>
   <%= @item.productname %>
 </p>
-<% else %>
-  <h1>No products to display</h1>
-<% end %>
 
-<h1>Want to add some products?<%= link_to " Click Here" , new_item_path %>    </h1>
+<p>
+  <strong>Seller Email:</strong>
+  <%= @item.email %>
+</p>
+
+
+<p>
+  <strong>Base Price:</strong>
+  <%= @item.baseprice %>
+</p>
+
+<p>
+  <strong>Current Bidding Price:</strong>
+  <%= @item.cbiddingprice %>
+  <%= @item.cprice %>
+      <p>Want to bid<%= link_to "Click Here" , edit_item_path %>    </p>
+  
+    </div>
+        
+</center>
+</body>
+
 

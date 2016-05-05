@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get 'users/new'
   get 'items/new'
+  get 'items/myproducts'
   get 'items/create'
 
   root             'static_pages#home'

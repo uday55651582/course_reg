@@ -1,5 +1,5 @@
 
-<body style="background-color:<%= @user.displaycolor%>">
+<body>
 <br>
 <h1>Welcome <%= @user.name %></h1>
 <center>
@@ -24,7 +24,7 @@
   <strong>Longitude:</strong>
   <%= @user.longitude %>
 
-      <p><%= link_to " Show Products" , item_path %>    </p>
+      <p><%= link_to " Show Products" , items_myproducts_path %>    </p>
   
 
 
@@ -32,5 +32,10 @@
         
 </center>
 </body>
-
+<style type="text/css">
+body {
+    background-image:
+        url('http://cdn3.crunchify.com/wp-content/uploads/2013/03/Crunchify.bg_.300.png');
+}
+</style>
 

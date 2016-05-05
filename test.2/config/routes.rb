@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   get 'users/new'
   get 'items/new'
   get 'items/create'
-  get 'items/buyproducts'
 
   root             'static_pages#home'
   get 'login'    => 'static_pages#login'

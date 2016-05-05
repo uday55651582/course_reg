@@ -15,6 +15,11 @@ module SessionsHelper
         user = current_user
     end
     
+    def current_item
+        @current_item ||= Item.find_by(params[:id])
+    end
+  
+    
     
     def admin_user_check
          current_user.admin?
